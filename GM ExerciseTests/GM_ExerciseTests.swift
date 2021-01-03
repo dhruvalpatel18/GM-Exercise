@@ -49,9 +49,4 @@ class GM_ExerciseTests: XCTestCase {
         waitForExpectations(timeout: 5)
     }
 
-    func testPerformanceExample() throws {
-        self.measure {
-        }
-    }
-
 }
