@@ -14,12 +14,15 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        ApiHelper().fetchGitHubAPIResponse(completion: { [self] (data) in
-            vcHelper.parseJsonResponse(data: data)
-            commitList = vcHelper.commitList
-            tableView.reloadData()
-        })
+
+        vcHelper.checkForReachability { [self] isInternetAvailable in
+            if isInternetAvailable {
+                commitList = vcHelper.commitList
+                tableView.reloadData()
+            } else {
+                print("No Internet")
+            }
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

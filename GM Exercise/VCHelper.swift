@@ -16,7 +16,22 @@ class VCHelper {
     private let jsonObjKeyForMessage = "message"
     private let jsonObjKeyForAuthor = "author"
     private let jsonObjKeyForName = "name"
-
+    let networkReachabilityManager = Alamofire.NetworkReachabilityManager(host: "www.google.com")
+    
+    func checkForReachability(complete: @escaping (Bool) -> Void) {
+        networkReachabilityManager?.startListening(onUpdatePerforming: { (status) in
+            switch status {
+            case .notReachable:
+                complete(false)
+            case .reachable(_), .unknown:
+                ApiHelper().fetchGitHubAPIResponse { (data) in
+                    self.commitList.removeAll()
+                    self.parseJsonResponse(data: data)
+                    complete(true)
+                }
+            }
+        })
+    }
     
     func parseJsonResponse(data: Data) {
         var authorName = ""
