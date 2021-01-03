@@ -3,18 +3,17 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GM Exercise-->
         <scene sceneID="wVV-EL-v2S">
             <objects>
                 <tableViewController id="YUf-5N-JTe" customClass="ViewController" customModule="GM_Exercise" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gOy-Bt-3VL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="135" id="3ud-a0-8xf" customClass="CommitCell" customModule="GM_Exercise" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="135"/>
@@ -87,6 +86,7 @@
                                         <constraint firstItem="Ijz-aL-HXP" firstAttribute="leading" secondItem="5Y4-fR-aC3" secondAttribute="leading" constant="8" id="vCc-XB-b24"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.54901960780000003" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="authorName" destination="7NC-Ag-qGk" id="KkT-wy-ya5"/>
                                     <outlet property="commitHash" destination="gmo-i6-FSZ" id="WFv-eK-Lhm"/>
@@ -99,7 +99,7 @@
                             <outlet property="delegate" destination="YUf-5N-JTe" id="Avr-mN-XIG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xYy-Sl-ng3"/>
+                    <navigationItem key="navigationItem" title="GM Exercise" id="xYy-Sl-ng3"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ai6-Fv-xQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,6 +113,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9vY-x8-AgW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.10980392160000001" green="0.2784313725" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -124,9 +125,4 @@
             <point key="canvasLocation" x="232" y="-86"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
