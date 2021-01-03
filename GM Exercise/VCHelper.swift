@@ -11,6 +11,12 @@ import Alamofire
 class VCHelper {
     
     public private(set) var commitList = [CommitModel]()
+    private let jsonObjKeyForSha = "sha"
+    private let jsonObjKeyForCommit = "commit"
+    private let jsonObjKeyForMessage = "message"
+    private let jsonObjKeyForAuthor = "author"
+    private let jsonObjKeyForName = "name"
+
     
     func parseJsonResponse(data: Data) {
         var authorName = ""
@@ -19,15 +25,15 @@ class VCHelper {
         do {
             if let jsonArray = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
                 for obj in jsonArray {
-                    if let sha = obj["sha"] as? String {
+                    if let sha = obj[jsonObjKeyForSha] as? String {
                         commitSha = sha
                     }
-                    if let commit = obj["commit"] as? [String: Any] {
-                        if let message = commit["message"] as? String {
+                    if let commit = obj[jsonObjKeyForCommit] as? [String: Any] {
+                        if let message = commit[jsonObjKeyForMessage] as? String {
                             commitMessage = message
                         }
-                        if let author = commit["author"] as? [String: Any] {
-                            if let name = author["name"] as? String {
+                        if let author = commit[jsonObjKeyForAuthor] as? [String: Any] {
+                            if let name = author[jsonObjKeyForName] as? String {
                                 authorName = name
                             }
                         }
