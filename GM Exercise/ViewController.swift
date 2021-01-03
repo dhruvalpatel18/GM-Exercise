@@ -33,10 +33,13 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CommitCell", for: indexPath) as! CommitCell
-        cell.authorName.text = vcHelper.commitList[indexPath.row].author
-        cell.commitHash.text = vcHelper.commitList[indexPath.row].commitSha
-        cell.commitMessage.text = vcHelper.commitList[indexPath.row].commitMessage
         
+        if let commitArray = commitList {
+            cell.authorName.text = commitArray[indexPath.row].author
+            cell.commitHash.text = commitArray[indexPath.row].commitSha
+            cell.commitMessage.text = commitArray[indexPath.row].commitMessage
+        }
+
         return cell
     }
 
