@@ -18,6 +18,7 @@
 		B1FFC89F25A1418000CA6E4D /* GM_ExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFC89E25A1418000CA6E4D /* GM_ExerciseUITests.swift */; };
 		B1FFC8B325A15A9100CA6E4D /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFC8B225A15A9100CA6E4D /* CommitCell.swift */; };
 		B1FFC8C525A15FCD00CA6E4D /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFC8C425A15FCD00CA6E4D /* ApiHelper.swift */; };
+		B1FFC8CA25A1632400CA6E4D /* CommitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFC8C925A1632400CA6E4D /* CommitModel.swift */; };
 		DE3BE0200BBF6FC279FD04FF /* Pods_GM_Exercise_GM_ExerciseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A80C2EA941FB56490E86FBE /* Pods_GM_Exercise_GM_ExerciseUITests.framework */; };
 		E788540E619C96EEDD495B9C /* Pods_GM_Exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A42EB5B32D93BF0AE316DC /* Pods_GM_Exercise.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		B1FFC8A025A1418000CA6E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1FFC8B225A15A9100CA6E4D /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
 		B1FFC8C425A15FCD00CA6E4D /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		B1FFC8C925A1632400CA6E4D /* CommitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitModel.swift; sourceTree = "<group>"; };
 		B59F292C902BE9E2CD764EA4 /* Pods-GM Exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GM Exercise.debug.xcconfig"; path = "Target Support Files/Pods-GM Exercise/Pods-GM Exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C6E0D5423CE6429BC17FF3 /* Pods-GM ExerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GM ExerciseTests.release.xcconfig"; path = "Target Support Files/Pods-GM ExerciseTests/Pods-GM ExerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 		E3573052B099F9BE632EAA17 /* Pods-GM Exercise-GM ExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GM Exercise-GM ExerciseUITests.release.xcconfig"; path = "Target Support Files/Pods-GM Exercise-GM ExerciseUITests/Pods-GM Exercise-GM ExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				B1FFC88A25A1417F00CA6E4D /* Info.plist */,
 				B1FFC8B225A15A9100CA6E4D /* CommitCell.swift */,
 				B1FFC8C425A15FCD00CA6E4D /* ApiHelper.swift */,
+				B1FFC8C925A1632400CA6E4D /* CommitModel.swift */,
 			);
 			path = "GM Exercise";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FFC8CA25A1632400CA6E4D /* CommitModel.swift in Sources */,
 				B1FFC8B325A15A9100CA6E4D /* CommitCell.swift in Sources */,
 				B1FFC88125A1417D00CA6E4D /* ViewController.swift in Sources */,
 				B1FFC87D25A1417D00CA6E4D /* AppDelegate.swift in Sources */,
