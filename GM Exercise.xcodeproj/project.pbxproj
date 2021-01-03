@@ -15,6 +15,7 @@
 		B1FFC88925A1417F00CA6E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FFC88725A1417F00CA6E4D /* LaunchScreen.storyboard */; };
 		B1FFC89425A1418000CA6E4D /* GM_ExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFC89325A1418000CA6E4D /* GM_ExerciseTests.swift */; };
 		B1FFC89F25A1418000CA6E4D /* GM_ExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFC89E25A1418000CA6E4D /* GM_ExerciseUITests.swift */; };
+		B1FFC8B325A15A9100CA6E4D /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFC8B225A15A9100CA6E4D /* CommitCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B1FFC89A25A1418000CA6E4D /* GM ExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GM ExerciseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FFC89E25A1418000CA6E4D /* GM_ExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GM_ExerciseUITests.swift; sourceTree = "<group>"; };
 		B1FFC8A025A1418000CA6E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1FFC8B225A15A9100CA6E4D /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B1FFC88525A1417F00CA6E4D /* Assets.xcassets */,
 				B1FFC88725A1417F00CA6E4D /* LaunchScreen.storyboard */,
 				B1FFC88A25A1417F00CA6E4D /* Info.plist */,
+				B1FFC8B225A15A9100CA6E4D /* CommitCell.swift */,
 			);
 			path = "GM Exercise";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FFC8B325A15A9100CA6E4D /* CommitCell.swift in Sources */,
 				B1FFC88125A1417D00CA6E4D /* ViewController.swift in Sources */,
 				B1FFC87D25A1417D00CA6E4D /* AppDelegate.swift in Sources */,
 				B1FFC87F25A1417D00CA6E4D /* SceneDelegate.swift in Sources */,
