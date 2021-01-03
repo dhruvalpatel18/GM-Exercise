@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class ViewController: UITableViewController {
 
@@ -20,7 +21,7 @@ class ViewController: UITableViewController {
                 commitList = vcHelper.commitList
                 tableView.reloadData()
             } else {
-                print("No Internet")
+                view.makeToast("No Internet", duration: 5.0, position: .top)
             }
         }
     }
