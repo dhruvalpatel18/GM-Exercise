@@ -10,8 +10,10 @@ import Toast_Swift
 
 class ViewController: UITableViewController {
 
-    let vcHelper = VCHelper()
-    var commitList: [CommitModel]?
+    private let vcHelper = VCHelper()
+    private var commitList: [CommitModel]?
+    private let noInternet = "No Internet"
+    private let commitCellIdentifier = "CommitCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,7 @@ class ViewController: UITableViewController {
                 commitList = vcHelper.commitList
                 tableView.reloadData()
             } else {
-                view.makeToast("No Internet", duration: 5.0, position: .top)
+                view.makeToast(noInternet, duration: 5.0, position: .top)
             }
         }
     }
@@ -32,7 +34,7 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CommitCell", for: indexPath) as! CommitCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: commitCellIdentifier, for: indexPath) as! CommitCell
         
         if let commitArray = commitList {
             cell.authorName.text = commitArray[indexPath.row].author
