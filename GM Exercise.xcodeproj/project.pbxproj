@@ -136,15 +136,14 @@
 			children = (
 				B1FFC87C25A1417D00CA6E4D /* AppDelegate.swift */,
 				B1FFC87E25A1417D00CA6E4D /* SceneDelegate.swift */,
-				B1FFC88025A1417D00CA6E4D /* ViewController.swift */,
-				B1FFC88225A1417D00CA6E4D /* Main.storyboard */,
+				B1FFC8DD25A1724800CA6E4D /* Cell */,
+				B1FFC8DC25A1723500CA6E4D /* Model */,
+				B1FFC8DB25A1721D00CA6E4D /* Helper */,
+				B1FFC8DE25A1725E00CA6E4D /* UIController */,
 				B1FFC88525A1417F00CA6E4D /* Assets.xcassets */,
+				B1FFC88225A1417D00CA6E4D /* Main.storyboard */,
 				B1FFC88725A1417F00CA6E4D /* LaunchScreen.storyboard */,
 				B1FFC88A25A1417F00CA6E4D /* Info.plist */,
-				B1FFC8B225A15A9100CA6E4D /* CommitCell.swift */,
-				B1FFC8C425A15FCD00CA6E4D /* ApiHelper.swift */,
-				B1FFC8C925A1632400CA6E4D /* CommitModel.swift */,
-				B1FFC8CE25A163F900CA6E4D /* VCHelper.swift */,
 			);
 			path = "GM Exercise";
 			sourceTree = "<group>";
@@ -165,6 +164,39 @@
 				B1FFC8A025A1418000CA6E4D /* Info.plist */,
 			);
 			path = "GM ExerciseUITests";
+			sourceTree = "<group>";
+		};
+		B1FFC8DB25A1721D00CA6E4D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B1FFC8CE25A163F900CA6E4D /* VCHelper.swift */,
+				B1FFC8C425A15FCD00CA6E4D /* ApiHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B1FFC8DC25A1723500CA6E4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1FFC8C925A1632400CA6E4D /* CommitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1FFC8DD25A1724800CA6E4D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B1FFC8B225A15A9100CA6E4D /* CommitCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B1FFC8DE25A1725E00CA6E4D /* UIController */ = {
+			isa = PBXGroup;
+			children = (
+				B1FFC88025A1417D00CA6E4D /* ViewController.swift */,
+			);
+			path = UIController;
 			sourceTree = "<group>";
 		};
 		DBED3CC5F14F47324A8BA334 /* Pods */ = {
