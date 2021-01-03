@@ -11,7 +11,10 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        ApiHelper().fetchGitHubAPIResponse(completion: { (data) in
+            print(String(data: data, encoding: .utf8)!)
+        })
     }
 
 
